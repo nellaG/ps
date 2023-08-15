@@ -27,6 +27,8 @@ def get_cost(perm):
 
 def next_permutation(perm) -> Union[List, None]:
     i = n - 1
+    if perm[0] != 0:
+        return None
     # 1
     while i > 0 and perm[i - 1] >= perm[i]:
         i -= 1
