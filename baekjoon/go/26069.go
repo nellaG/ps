@@ -12,7 +12,7 @@ func main() {
 	var n int
 	var s1, s2 string
 	fmt.Fscanln(reader, &n)
-	var map_ = make(map[string]bool)
+	map_ := make(map[string]bool)
 	map_["ChongChong"] = true
 	sum := 1
 	for i := 0; i < n; i++ {

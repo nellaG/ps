@@ -6,9 +6,11 @@ import (
 	"os"
 )
 
-var reader = bufio.NewReader(os.Stdin)
-var writer = bufio.NewWriter(os.Stdout)
-var nlist []int
+var (
+	reader = bufio.NewReader(os.Stdin)
+	writer = bufio.NewWriter(os.Stdout)
+	nlist  []int
+)
 
 func main() {
 	var n, m int
@@ -17,7 +19,6 @@ func main() {
 	nlist = make([]int, n+1)
 	dfs(0, 0, n, m)
 	return
-
 }
 
 func dfs(idx int, start int, n int, m int) {
